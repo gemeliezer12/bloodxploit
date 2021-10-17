@@ -1,0 +1,26 @@
+    [
+        {
+            "id": 1,
+            "title": "No Cost",
+            "icon": "fas fa-desktop",
+            "desc": "Our exploits are free and have no key system."
+        },
+        {
+            "id": 2,
+            "title": "Easy to use",
+            "icon": "fas fa-compass",
+            "desc": "Our exploit is easy to use and requires no knowledge about exploits to use it."
+        },
+        {
+            "id": 3,
+            "title": "Clean Design",
+            "icon": "fas fa-edit",
+            "desc": "The exploit we offer to our clients look and feel bright and clean."
+        },
+        {
+            "id": 4,
+            "title": "24/7 Support",
+            "icon": "fas fa-comments",
+            "desc": "Our qualified team provides 24/7 support to help you solve any issues you may have with our products."
+        }
+    ]

@@ -1,0 +1,347 @@
+/* Nav Burger Button */
+
+.dur25j4sw5 {
+  width: 60px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--base-comp-color-2);
+  border-radius: 200px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s ease;
+}
+
+.u8ayh9lc3a {
+  bottom: calc(0vh + 15px);
+  right: calc(0vw + 15px);
+  position: fixed;
+}
+
+/*  */
+
+.dur25j4sw5 div,
+.dur25j4sw5 div::before,
+.dur25j4sw5 div::after {
+  width: 50%;
+  height: 4px;
+  background-color: var(--primary-color1);
+  transition: transform 0.2s ease;
+  border-radius: 200px;
+}
+
+.dur25j4sw5 div::before,
+.dur25j4sw5 div::after {
+  content: "";
+  transform: translateY(-12px);
+  position: absolute;
+}
+
+.dur25j4sw5 div::after {
+  transform: translateY(12px);
+}
+
+/*  */
+
+.dur25j4sw5:hover {
+  background: var(--base-comp-color-3);
+}
+
+.dur25j4sw5:hover div::before {
+  transform: translateY(-16px);
+}
+
+.dur25j4sw5:hover div::after {
+  transform: translateY(16px);
+}
+
+/*  */
+
+.dur25j4sw5.open div {
+  animation: dur25j4sw5open 0.8s forwards;
+}
+
+.dur25j4sw5.open div::before {
+  animation: dur25j4sw5openbefore 0.8s forwards;
+}
+
+.dur25j4sw5.open div::after {
+  animation: dur25j4sw5openafter 0.8s forwards;
+}
+
+/*  */
+
+.dur25j4sw5.close div {
+  animation: dur25j4sw5close 0.8s forwards;
+}
+
+.dur25j4sw5.close div::before {
+  animation: dur25j4sw5closebefore 0.8s forwards;
+}
+
+.dur25j4sw5.close div::after {
+  animation: dur25j4sw5closeafter 0.8s forwards;
+}
+
+/*  */
+
+@keyframes dur25j4sw5open {
+  20% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes dur25j4sw5openbefore {
+  20% {
+    transform: translateY(0px);
+    transform: rotateZ(0deg);
+    visibility: visible;
+  }
+  100% {
+    transform: rotateZ(405deg);
+    visibility: visible;
+  }
+}
+
+@keyframes dur25j4sw5openafter {
+  20% {
+    transform: translateY(0px);
+    transform: rotateZ(0deg);
+    visibility: visible;
+  }
+  100% {
+    transform: rotateZ(495deg);
+    visibility: visible;
+  }
+}
+
+/*  */
+
+@keyframes dur25j4sw5close {
+  0% {
+    visibility: hidden;
+  }
+  80% {
+    visibility: hidden;
+  }
+}
+
+@keyframes dur25j4sw5closebefore {
+  0% {
+    transform: translateY(0);
+    transform: rotateZ(-405deg);
+    visibility: visible;
+  }
+  80% {
+    transform: translateY(0);
+    transform: rotateZ(0);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(12);
+  }
+}
+
+@keyframes dur25j4sw5closeafter {
+  0% {
+    transform: translateY(0);
+    transform: rotateZ(-495deg);
+    visibility: visible;
+  }
+  80% {
+    transform: translateY(0);
+    transform: rotateZ(0);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(12);
+  }
+}
+
+/*  */
+
+.ktzl4hr9bk {
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  border: 1px solid var(--primary-color1);
+}
+
+/* Nav Bar */
+
+.vg82ylpoyg {
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255);
+  z-index: 10;
+  border-bottom: 4px solid var(--base-comp-color-3);
+}
+
+.y27gz95oga {
+  max-width: 1500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+/* Download Button */
+
+.dcm0cujv48 {
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.dcm0cujv48 i {
+  margin-right: 10px;
+}
+
+.dcm0cujv48 .wspwho0gps {
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color1);
+  border-radius: 4px;
+  border-bottom: 4px solid var(--base-comp-color-3);
+  z-index: 30;
+  transition: transform 0.1s ease, border 0.1s ease, background-color 0.1s ease,
+    height 0.1s ease;
+}
+
+.dcm0cujv48 .yb08fmpwlp {
+  position: absolute;
+  height: 12px;
+  width: 100%;
+  bottom: calc(0% - 4px);
+  border-radius: 200px;
+  background-color: var(--base-comp-color-3);
+  z-index: -10;
+  transition: transform 0.1s ease, border 0.1s ease, background-color 0.1s ease,
+    height 0.1s ease;
+}
+
+.dcm0cujv48.disabled .wspwho0gps {
+  background-color: var(--base-color-3);
+}
+
+.dcm0cujv48.abled:hover .wspwho0gps {
+  height: calc(100% - 1px);
+  transform: translateY(1px);
+  border-bottom: 3px solid var(--base-comp-color-4);
+  background-color: var(--primary-color1-2);
+}
+
+.dcm0cujv48.abled:active .wspwho0gps {
+  height: calc(100% - 3px);
+  transform: translateY(3px);
+  border-bottom: 1px solid var(--base-comp-color-4);
+}
+
+.dcm0cujv48.disabled:hover .wspwho0gps {
+  background-color: var(--base-color-4);
+}
+
+.dcm0cujv48.abled:hover .yb08fmpwlp {
+  transform: translateY(-1px);
+}
+
+.dcm0cujv48.abled:active .yb08fmpwlp {
+  transform: translateY(-3px);
+}
+
+/*  */
+
+.tli2so1nb3 {
+  margin: auto;
+  max-width: 100%;
+}
+
+/*  */
+
+@media only screen and (min-width: 400px) {
+  .tli2so1nb3 {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .tli2so1nb3 {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .tli2so1nb3 {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .u7pohtdihm div {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .tli2so1nb3 {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .tli2so1nb3 {
+    width: 700px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .tli2so1nb3 {
+    width: 800px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .tli2so1nb3 {
+    width: 900px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .tli2so1nb3 {
+    width: 1000px;
+  }
+  .u7pohtdihm div {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .tli2so1nb3 {
+    width: 1200px;
+  }
+  .u8ayh9lc3a {
+    right: calc(50vw - 750px + 15px);
+  }
+}
+
+.u7pohtdihm {
+  background-color: var(--bg-color);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.k6zak5gms0 {
+  border-bottom: 4px solid var(--primary-color1);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  display: inline-block;
+  color: var(--base-color-2);
+}
